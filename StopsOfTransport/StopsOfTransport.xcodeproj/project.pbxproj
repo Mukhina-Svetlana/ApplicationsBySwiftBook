@@ -13,14 +13,20 @@
 		AE33EF8727C9840700CCDF41 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE33EF8527C9840700CCDF41 /* Main.storyboard */; };
 		AE33EF8927C9840700CCDF41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE33EF8827C9840700CCDF41 /* Assets.xcassets */; };
 		AE33EF8C27C9840700CCDF41 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE33EF8A27C9840700CCDF41 /* LaunchScreen.storyboard */; };
-		AE33EF9427C9898500CCDF41 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE33EF9327C9898500CCDF41 /* NetworkManager.swift */; };
-		AE33EF9627C98D7800CCDF41 /* CurrentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE33EF9527C98D7800CCDF41 /* CurrentData.swift */; };
-		AE33EF9827C9932300CCDF41 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE33EF9727C9932300CCDF41 /* Model.swift */; };
 		AE33EF9A27C9BB4700CCDF41 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE33EF9927C9BB4700CCDF41 /* SecondViewController.swift */; };
 		AE33EF9E27CB9C8D00CCDF41 /* StopsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE33EF9D27CB9C8D00CCDF41 /* StopsTableViewCell.swift */; };
 		AE33EFA027CBAF3700CCDF41 /* NetworkInfoStops.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE33EF9F27CBAF3700CCDF41 /* NetworkInfoStops.swift */; };
 		AE33EFA227CBBE2F00CCDF41 /* StopsInfoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE33EFA127CBBE2F00CCDF41 /* StopsInfoData.swift */; };
 		AE33EFA427CBBF8C00CCDF41 /* ModelInfoStops.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE33EFA327CBBF8C00CCDF41 /* ModelInfoStops.swift */; };
+		AE33EFAC27CC261900CCDF41 /* TableViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE33EFAB27CC261900CCDF41 /* TableViewViewModel.swift */; };
+		AE33EFAE27CC263400CCDF41 /* TableViewViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE33EFAD27CC263400CCDF41 /* TableViewViewModelType.swift */; };
+		AE33EFB027CC284B00CCDF41 /* Stop.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE33EFAF27CC284B00CCDF41 /* Stop.swift */; };
+		AE33EFB227CC291700CCDF41 /* StopTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE33EFB127CC291700CCDF41 /* StopTableViewCell.swift */; };
+		AE33EFB627CC2AC100CCDF41 /* TableViewCellViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE33EFB527CC2AC100CCDF41 /* TableViewCellViewModelType.swift */; };
+		AE33EFB827CC2AFA00CCDF41 /* TableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE33EFB727CC2AFA00CCDF41 /* TableViewCellViewModel.swift */; };
+		AE33EFBA27CC33FA00CCDF41 /* StopsJSONData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE33EFB927CC33FA00CCDF41 /* StopsJSONData.swift */; };
+		AE33EFBC27CC433B00CCDF41 /* TransportTableViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE33EFBB27CC433B00CCDF41 /* TransportTableViewModelType.swift */; };
+		AE33EFBE27CC44DC00CCDF41 /* TransportTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE33EFBD27CC44DC00CCDF41 /* TransportTableViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,14 +38,20 @@
 		AE33EF8827C9840700CCDF41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE33EF8B27C9840700CCDF41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE33EF8D27C9840700CCDF41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AE33EF9327C9898500CCDF41 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
-		AE33EF9527C98D7800CCDF41 /* CurrentData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentData.swift; sourceTree = "<group>"; };
-		AE33EF9727C9932300CCDF41 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		AE33EF9927C9BB4700CCDF41 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		AE33EF9D27CB9C8D00CCDF41 /* StopsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopsTableViewCell.swift; sourceTree = "<group>"; };
 		AE33EF9F27CBAF3700CCDF41 /* NetworkInfoStops.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkInfoStops.swift; sourceTree = "<group>"; };
 		AE33EFA127CBBE2F00CCDF41 /* StopsInfoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopsInfoData.swift; sourceTree = "<group>"; };
 		AE33EFA327CBBF8C00CCDF41 /* ModelInfoStops.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelInfoStops.swift; sourceTree = "<group>"; };
+		AE33EFAB27CC261900CCDF41 /* TableViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewViewModel.swift; sourceTree = "<group>"; };
+		AE33EFAD27CC263400CCDF41 /* TableViewViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewViewModelType.swift; sourceTree = "<group>"; };
+		AE33EFAF27CC284B00CCDF41 /* Stop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stop.swift; sourceTree = "<group>"; };
+		AE33EFB127CC291700CCDF41 /* StopTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopTableViewCell.swift; sourceTree = "<group>"; };
+		AE33EFB527CC2AC100CCDF41 /* TableViewCellViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellViewModelType.swift; sourceTree = "<group>"; };
+		AE33EFB727CC2AFA00CCDF41 /* TableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellViewModel.swift; sourceTree = "<group>"; };
+		AE33EFB927CC33FA00CCDF41 /* StopsJSONData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopsJSONData.swift; sourceTree = "<group>"; };
+		AE33EFBB27CC433B00CCDF41 /* TransportTableViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportTableViewModelType.swift; sourceTree = "<group>"; };
+		AE33EFBD27CC44DC00CCDF41 /* TransportTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportTableViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,21 +86,67 @@
 			children = (
 				AE33EF7F27C9840700CCDF41 /* AppDelegate.swift */,
 				AE33EF8127C9840700CCDF41 /* SceneDelegate.swift */,
-				AE33EF9327C9898500CCDF41 /* NetworkManager.swift */,
-				AE33EF9527C98D7800CCDF41 /* CurrentData.swift */,
-				AE33EF9727C9932300CCDF41 /* Model.swift */,
-				AE33EF8327C9840700CCDF41 /* ViewController.swift */,
-				AE33EF9927C9BB4700CCDF41 /* SecondViewController.swift */,
-				AE33EF9D27CB9C8D00CCDF41 /* StopsTableViewCell.swift */,
-				AE33EF9F27CBAF3700CCDF41 /* NetworkInfoStops.swift */,
-				AE33EFA127CBBE2F00CCDF41 /* StopsInfoData.swift */,
-				AE33EFA327CBBF8C00CCDF41 /* ModelInfoStops.swift */,
-				AE33EF8527C9840700CCDF41 /* Main.storyboard */,
-				AE33EF8827C9840700CCDF41 /* Assets.xcassets */,
-				AE33EF8A27C9840700CCDF41 /* LaunchScreen.storyboard */,
-				AE33EF8D27C9840700CCDF41 /* Info.plist */,
+				AE33EFAA27CC251100CCDF41 /* SupportFiles */,
+				AE33EFA927CC24FE00CCDF41 /* Protocols */,
+				AE33EFA827CC24F500CCDF41 /* Models */,
+				AE33EFA727CC24EB00CCDF41 /* Views */,
+				AE33EFA527CC24C400CCDF41 /* ViewModels */,
 			);
 			path = StopsOfTransport;
+			sourceTree = "<group>";
+		};
+		AE33EFA527CC24C400CCDF41 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				AE33EFAB27CC261900CCDF41 /* TableViewViewModel.swift */,
+				AE33EFB727CC2AFA00CCDF41 /* TableViewCellViewModel.swift */,
+				AE33EFBD27CC44DC00CCDF41 /* TransportTableViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		AE33EFA727CC24EB00CCDF41 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AE33EF8327C9840700CCDF41 /* ViewController.swift */,
+				AE33EF9927C9BB4700CCDF41 /* SecondViewController.swift */,
+				AE33EFB127CC291700CCDF41 /* StopTableViewCell.swift */,
+				AE33EF9D27CB9C8D00CCDF41 /* StopsTableViewCell.swift */,
+				AE33EF9F27CBAF3700CCDF41 /* NetworkInfoStops.swift */,
+				AE33EF8527C9840700CCDF41 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AE33EFA827CC24F500CCDF41 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AE33EFAF27CC284B00CCDF41 /* Stop.swift */,
+				AE33EFB927CC33FA00CCDF41 /* StopsJSONData.swift */,
+				AE33EFA127CBBE2F00CCDF41 /* StopsInfoData.swift */,
+				AE33EFA327CBBF8C00CCDF41 /* ModelInfoStops.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AE33EFA927CC24FE00CCDF41 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				AE33EFAD27CC263400CCDF41 /* TableViewViewModelType.swift */,
+				AE33EFB527CC2AC100CCDF41 /* TableViewCellViewModelType.swift */,
+				AE33EFBB27CC433B00CCDF41 /* TransportTableViewModelType.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		AE33EFAA27CC251100CCDF41 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				AE33EF8827C9840700CCDF41 /* Assets.xcassets */,
+				AE33EF8D27C9840700CCDF41 /* Info.plist */,
+				AE33EF8A27C9840700CCDF41 /* LaunchScreen.storyboard */,
+			);
+			path = SupportFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,16 +220,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE33EF9427C9898500CCDF41 /* NetworkManager.swift in Sources */,
+				AE33EFAE27CC263400CCDF41 /* TableViewViewModelType.swift in Sources */,
 				AE33EF8427C9840700CCDF41 /* ViewController.swift in Sources */,
 				AE33EFA027CBAF3700CCDF41 /* NetworkInfoStops.swift in Sources */,
 				AE33EFA227CBBE2F00CCDF41 /* StopsInfoData.swift in Sources */,
+				AE33EFBC27CC433B00CCDF41 /* TransportTableViewModelType.swift in Sources */,
 				AE33EF8027C9840700CCDF41 /* AppDelegate.swift in Sources */,
 				AE33EF9E27CB9C8D00CCDF41 /* StopsTableViewCell.swift in Sources */,
-				AE33EF9827C9932300CCDF41 /* Model.swift in Sources */,
+				AE33EFBA27CC33FA00CCDF41 /* StopsJSONData.swift in Sources */,
+				AE33EFB227CC291700CCDF41 /* StopTableViewCell.swift in Sources */,
+				AE33EFB627CC2AC100CCDF41 /* TableViewCellViewModelType.swift in Sources */,
+				AE33EFB027CC284B00CCDF41 /* Stop.swift in Sources */,
+				AE33EFB827CC2AFA00CCDF41 /* TableViewCellViewModel.swift in Sources */,
+				AE33EFBE27CC44DC00CCDF41 /* TransportTableViewModel.swift in Sources */,
 				AE33EF9A27C9BB4700CCDF41 /* SecondViewController.swift in Sources */,
-				AE33EF9627C98D7800CCDF41 /* CurrentData.swift in Sources */,
 				AE33EFA427CBBF8C00CCDF41 /* ModelInfoStops.swift in Sources */,
+				AE33EFAC27CC261900CCDF41 /* TableViewViewModel.swift in Sources */,
 				AE33EF8227C9840700CCDF41 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -323,7 +387,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 45952R9AAB;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = StopsOfTransport/Info.plist;
+				INFOPLIST_FILE = StopsOfTransport/SupportFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -351,7 +415,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 45952R9AAB;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = StopsOfTransport/Info.plist;
+				INFOPLIST_FILE = StopsOfTransport/SupportFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

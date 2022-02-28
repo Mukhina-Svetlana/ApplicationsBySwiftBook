@@ -6,8 +6,11 @@
 //
 
 import Foundation
+import UIKit
 
 class NetworkInfoStops {
+    
+    var onCompletion: (() -> ())!
     
     func getDataInfoStops(id: String, completionHandled: @escaping ([ModelInfoStops]) -> Void) {
         let urlString = "https://api.mosgorpass.ru/v8.2/stop/" + id
@@ -16,9 +19,9 @@ class NetworkInfoStops {
         let tast = session.dataTask(with: url) { data, response, error in
             guard let data = data else { return }
             if let currentModel = self.parsJsonInfoStops(withData: data){
+                
                 completionHandled(currentModel)
             }
-            
         }
         tast.resume()
     }
@@ -34,6 +37,7 @@ class NetworkInfoStops {
             return arrayInfoData
         } catch let error as NSError{
             print(error.localizedDescription)
+            onCompletion()
         }
         return nil
     }

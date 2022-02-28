@@ -8,12 +8,12 @@
 import Foundation
 
 struct ModelInfoStops {
-    let type, number: String
+    let type, number: String?
     let timeArrival: String?
     init(info: RoutePath) {
         type = info.type
         number = info.number
-        timeArrival = info.timeArrival.first ?? ""
+        timeArrival = info.timeArrival.first ?? nil
     }
 
 }

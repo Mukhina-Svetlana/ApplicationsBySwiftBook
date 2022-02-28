@@ -20,15 +20,28 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="RmE-b6-rmt">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="RmE-b6-rmt" customClass="StopTableViewCell" customModule="StopsOfTransport" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RmE-b6-rmt" id="nZ3-aX-gDn">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G4r-RW-buL">
+                                                    <rect key="frame" x="20" y="11" width="374" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="G4r-RW-buL" secondAttribute="trailing" constant="20" symbolic="YES" id="NER-GT-z07"/>
+                                                <constraint firstItem="G4r-RW-buL" firstAttribute="top" secondItem="nZ3-aX-gDn" secondAttribute="top" constant="11" id="dFa-Gg-mTB"/>
+                                                <constraint firstItem="G4r-RW-buL" firstAttribute="leading" secondItem="nZ3-aX-gDn" secondAttribute="leading" constant="20" symbolic="YES" id="ePV-rK-n5s"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="nFx-RG-7m9" kind="presentation" identifier="showMap" id="TF1-mQ-Ogr"/>
+                                            <outlet property="stopNameLabel" destination="G4r-RW-buL" id="Hve-A6-BRZ"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -51,6 +64,7 @@
                     <navigationItem key="navigationItem" title="Public transport stops" id="Lf8-9c-Q3j"/>
                     <connections>
                         <outlet property="tableView" destination="xQf-Xq-dy7" id="6rG-cw-RzX"/>
+                        <segue destination="nFx-RG-7m9" kind="showDetail" identifier="showMap" id="3TC-DA-ek9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -132,15 +146,6 @@
                                     <outlet property="delegate" destination="nFx-RG-7m9" id="tam-7S-3qM"/>
                                 </connections>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="7hL-aP-xIT">
-                                <rect key="frame" x="47.5" y="689.5" width="319" height="20.5"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="319" id="jWm-0l-haa"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-MediumItalic" family="Helvetica Neue" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="close" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LJd-tu-5NQ">
                                 <rect key="frame" x="363" y="44" width="40" height="30"/>
                                 <constraints>
@@ -165,6 +170,16 @@
                                     <action selector="closeInfo:" destination="nFx-RG-7m9" eventType="touchUpInside" id="gv5-aD-iSd"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="7hL-aP-xIT">
+                                <rect key="frame" x="47.5" y="673" width="319" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="PeH-Gz-AbU"/>
+                                    <constraint firstAttribute="width" constant="319" id="eNr-8Y-iel"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-MediumItalic" family="Helvetica Neue" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="m77-Zd-Mg5"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -172,12 +187,12 @@
                             <constraint firstItem="LJd-tu-5NQ" firstAttribute="top" secondItem="m77-Zd-Mg5" secondAttribute="top" id="54y-Mg-0Bp"/>
                             <constraint firstItem="m77-Zd-Mg5" firstAttribute="trailing" secondItem="LJd-tu-5NQ" secondAttribute="trailing" constant="11" id="5lK-pq-Y8X"/>
                             <constraint firstItem="Boy-Nc-BaI" firstAttribute="top" secondItem="YI7-TF-vmR" secondAttribute="top" id="BDa-N5-6zU"/>
-                            <constraint firstItem="7hL-aP-xIT" firstAttribute="firstBaseline" secondItem="YI7-TF-vmR" secondAttribute="firstBaseline" id="BI3-nr-nan"/>
                             <constraint firstItem="YI7-TF-vmR" firstAttribute="centerX" secondItem="m77-Zd-Mg5" secondAttribute="centerX" id="CMp-pf-326"/>
                             <constraint firstItem="8v2-Yz-zJB" firstAttribute="centerY" secondItem="GMX-EW-CeM" secondAttribute="centerY" constant="-64.5" id="Eh8-F9-cRk"/>
                             <constraint firstItem="YI7-TF-vmR" firstAttribute="bottom" secondItem="m77-Zd-Mg5" secondAttribute="bottom" id="HN5-bn-5oS"/>
-                            <constraint firstItem="7hL-aP-xIT" firstAttribute="centerX" secondItem="YI7-TF-vmR" secondAttribute="centerX" id="NoR-AM-Xac"/>
                             <constraint firstItem="Boy-Nc-BaI" firstAttribute="leading" secondItem="YI7-TF-vmR" secondAttribute="trailing" constant="-40" id="QZC-zi-DWf"/>
+                            <constraint firstItem="7hL-aP-xIT" firstAttribute="centerX" secondItem="YI7-TF-vmR" secondAttribute="centerX" id="UzT-HS-s0K"/>
+                            <constraint firstItem="7hL-aP-xIT" firstAttribute="firstBaseline" secondItem="YI7-TF-vmR" secondAttribute="firstBaseline" constant="-16.5" id="WhR-iI-5os"/>
                             <constraint firstItem="8v2-Yz-zJB" firstAttribute="trailing" secondItem="m77-Zd-Mg5" secondAttribute="trailing" id="bV6-iI-rMH"/>
                             <constraint firstItem="8v2-Yz-zJB" firstAttribute="top" secondItem="m77-Zd-Mg5" secondAttribute="top" constant="-44" id="cCu-px-2ZN"/>
                             <constraint firstItem="8v2-Yz-zJB" firstAttribute="leading" secondItem="m77-Zd-Mg5" secondAttribute="leading" id="hfm-fZ-mf4"/>
@@ -186,9 +201,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="5oz-35-7gB"/>
                     <connections>
-                        <outlet property="closeButton" destination="Boy-Nc-BaI" id="9gW-bh-KXa"/>
+                        <outlet property="closeButton" destination="Boy-Nc-BaI" id="Umx-5f-fFY"/>
                         <outlet property="mapView" destination="8v2-Yz-zJB" id="z6a-zf-eZ8"/>
-                        <outlet property="nameStop" destination="7hL-aP-xIT" id="i7I-T5-ltb"/>
+                        <outlet property="nameStop" destination="7hL-aP-xIT" id="SLP-IN-N9l"/>
                         <outlet property="tableView" destination="YI7-TF-vmR" id="wtE-oZ-279"/>
                     </connections>
                 </viewController>
